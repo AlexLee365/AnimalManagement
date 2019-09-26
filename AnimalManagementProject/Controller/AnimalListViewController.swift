@@ -12,7 +12,7 @@ import SnapKit
 class AnimalListViewController: UIViewController {
     
     // MARK: - UI Properties
-    let animalListView = AnimalListView()
+    private let animalListView = AnimalListView()
     
     
     override func viewDidLoad() {
@@ -36,11 +36,6 @@ class AnimalListViewController: UIViewController {
     private func configureViewsOptions() {
         title = "동물 관리"
         animalListView.delegate = self
-        
-//        animalListView.animalArray = [Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"),]
-        
-        
-//        animalListView.animalArray = [Cat(name: "주스"), Dog(name: "푸스"), Lizard(name: "리자몽"), Parrot(name: "캐럿")]
     }
 }
 
